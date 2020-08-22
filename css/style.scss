@@ -115,3 +115,11 @@
         .error {
             border: 1px solid red !important;
         }
+        
+        .default-gif {
+            text-align: center;
+            img {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
