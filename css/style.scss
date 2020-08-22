@@ -77,3 +77,14 @@
     .gif {
         max-width: 100px;
     }
+    
+    div.gif-results {
+        text-align: center;
+        display: inline-block;
+        .gifs {
+            padding: 10px;
+            height: 200px;
+            width: auto;
+            max-width: 350px;
+        }
+    }
