@@ -123,3 +123,17 @@
                 max-width: 400px;
             }
         }
+        
+        .footer {
+            height: 40px;
+            margin: 40px 0 0 0;
+            background: rgba(black, 0.2);
+            p {
+                margin: 0;
+                padding: 10px;
+                text-align: center;
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+        } //end .footer
