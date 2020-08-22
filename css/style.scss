@@ -23,3 +23,6 @@ $purple-hover: #6d4a6b;
 
 $button-box-shadow: 0 0 5px 3px rgba(black, 0.1);
 $button-box-shadow-hover: 0 0 10px 5px rgba(black, 0.1);
+.main {
+    background: linear-gradient(rgba($purple, 0.2), rgba($purple, 0.01));
+}
