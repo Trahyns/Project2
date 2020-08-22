@@ -33,3 +33,16 @@ $button-box-shadow-hover: 0 0 10px 5px rgba(black, 0.1);
     margin-bottom: -80px;
     padding-bottom: 40px;
 }
+
+.well {
+    border-radius: 5px;
+    padding: 40px 0;
+}
+
+div.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
