@@ -1,62 +1,76 @@
     /* Latest Bootstrap CDN min version*/
-
-@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
-* {
-    box-sizing: border-box;
-}
-
-html {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-$purple: #660061;
-$purple-hover: #6d4a6b;
-
-/*create a shadow effect on search button*/
-
-$button-box-shadow: 0 0 5px 3px rgba(black, 0.1);
-$button-box-shadow-hover: 0 0 10px 5px rgba(black, 0.1);
-
-/*background color effect*/
-
-.main {
-    background: linear-gradient(rgba($purple, 0.2), rgba($purple, 0.01));
-    //Avoid Footer floating midway when there's no content
-    min-height: 100%;
-    margin-bottom: -80px;
-    padding-bottom: 40px;
-}
-
-.well {
-    border-radius: 5px;
-    padding: 40px 0;
-}
-
-div.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0;
-}
-
-.form-inline {
-    margin-top: 20px;
-    input {
-        margin-top: -2px;
-        width: auto !important;
-        transition: all 300ms ease-in-out;
-        box-shadow: $button-box-shadow;
-        &:hover {
-            box-shadow: $button-box-shadow-hover;
-            transform: scale(1.01);
-            transition: all 300ms ease-in-out;
-        }
+    
+    @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+    * {
+        box-sizing: border-box;
     }
+    
+    html {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    
+    html,
+    body {
+        height: 100%;
+    }
+    
+    $purple: #660061;
+    $purple-hover: #6d4a6b;
+    /*create a shadow effect on search button*/
+    
+    $button-box-shadow: 0 0 5px 3px rgba(black, 0.1);
+    $button-box-shadow-hover: 0 0 10px 5px rgba(black, 0.1);
+    /*background color effect*/
+    
+    .main {
+        background: linear-gradient(rgba($purple, 0.2), rgba($purple, 0.01));
+        //Avoid Footer floating midway when there's no content
+        min-height: 100%;
+        margin-bottom: -80px;
+        padding-bottom: 40px;
+    }
+    
+    .well {
+        border-radius: 5px;
+        padding: 40px 0;
+    }
+    
+    div.center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0;
+    }
+    
+    .form-inline {
+        margin-top: 20px;
+        input {
+            margin-top: -2px;
+            width: auto !important;
+            transition: all 300ms ease-in-out;
+            box-shadow: $button-box-shadow;
+            &:hover {
+                box-shadow: $button-box-shadow-hover;
+                transform: scale(1.01);
+                transition: all 300ms ease-in-out;
+            }
+        }
+        #submit {
+            height: 33px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background: $purple;
+            color: white;
+            letter-spacing: 1px;
+            margin-left: -4px;
+            border-radius: 0 5px 5px 0px;
+            border: 0;
+            &:hover {
+                cursor: pointer;
+                background: $purple-hover;
+            }
+        }
+    } //end .form-inline
