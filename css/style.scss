@@ -23,6 +23,13 @@ $purple-hover: #6d4a6b;
 
 $button-box-shadow: 0 0 5px 3px rgba(black, 0.1);
 $button-box-shadow-hover: 0 0 10px 5px rgba(black, 0.1);
+
+/*background color effect*/
+
 .main {
     background: linear-gradient(rgba($purple, 0.2), rgba($purple, 0.01));
+    //Avoid Footer floating midway when there's no content
+    min-height: 100%;
+    margin-bottom: -80px;
+    padding-bottom: 40px;
 }
