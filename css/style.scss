@@ -137,3 +137,17 @@
                 }
             }
         } //end .footer
+        @media screen and (max-width: 768px) {
+            .input-group {
+                display: inline-flex;
+            }
+            .form-inline input {
+                margin-top: 0;
+            }
+        }
+        
+        @media screen and (min-width: 768px) {
+            .form-inline input {
+                min-width: 500px;
+            }
+        }
