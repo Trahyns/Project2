@@ -1,148 +1,163 @@
 /* Latest Bootstrap CDN min version*/
+
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  margin: 0;
-  padding: 0;
-  border: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
+
 /*create a shadow effect on search button*/
+
+
 /*background color effect*/
+
 .main {
-  background: linear-gradient(rgba(102, 0, 97, 0.2), rgba(102, 0, 97, 0.01));
-  min-height: 100%;
-  margin-bottom: -80px;
-  padding-bottom: 40px;
+    background: linear-gradient(rgba(102, 0, 97, 0.2), rgba(102, 0, 97, 0.01));
+    min-height: 100%;
+    margin-bottom: -80px;
+    padding-bottom: 40px;
 }
 
 .well {
-  border-radius: 5px;
-  padding: 40px 0;
+    border-radius: 5px;
+    padding: 40px 0;
 }
 
 div.center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
 }
 
 .form-inline {
-  margin-top: 20px;
+    margin-top: 20px;
 }
+
 .form-inline input {
-  margin-top: -2px;
-  width: auto !important;
-  transition: all 300ms ease-in-out;
-  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+    margin-top: -2px;
+    width: auto !important;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
 }
+
 .form-inline input:hover {
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-  transform: scale(1.01);
-  transition: all 300ms ease-in-out;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
+    transition: all 300ms ease-in-out;
 }
+
 .form-inline #submit {
-  height: 33px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background: #660061;
-  color: white;
-  letter-spacing: 1px;
-  margin-left: -4px;
-  border-radius: 0 5px 5px 0px;
-  border: 0;
+    height: 33px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #660061;
+    color: white;
+    letter-spacing: 1px;
+    margin-left: -4px;
+    border-radius: 0 5px 5px 0px;
+    border: 0;
 }
+
 .form-inline #submit:hover {
-  cursor: pointer;
-  background: #6d4a6b;
+    cursor: pointer;
+    background: #6d4a6b;
 }
 
 .gif {
-  max-width: 100px;
+    max-width: 100px;
 }
 
 div.gif-results {
-  text-align: center;
-  display: inline-block;
+    text-align: center;
+    display: inline-block;
 }
+
 div.gif-results .gifs {
-  padding: 10px;
-  height: 200px;
-  width: auto;
-  max-width: 350px;
+    padding: 10px;
+    height: 200px;
+    width: auto;
+    max-width: 350px;
 }
 
 .load-more {
-  text-align: center;
+    text-align: center;
 }
+
 .load-more button {
-  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
-  display: none;
-  background: #660061;
-  border: 0;
-  color: white;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  font-size: 1rem;
-  border-radius: 2px;
-  letter-spacing: 1px;
-  text-align: center;
-  margin: 20px 0;
-  border: 1px solid transparent;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+    display: none;
+    background: #660061;
+    border: 0;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 20px 0;
+    border: 1px solid transparent;
 }
+
 .load-more button:hover {
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-  background: #6d4a6b;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    background: #6d4a6b;
+    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .error {
-  border: 1px solid red !important;
+    border: 1px solid red !important;
 }
 
 .default-gif {
-  text-align: center;
+    text-align: center;
 }
+
 .default-gif img {
-  width: 100%;
-  max-width: 400px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .footer {
-  height: 40px;
-  margin: 40px 0 0 0;
-  background: rgba(0, 0, 0, 0.2);
+    height: 40px;
+    margin: 40px 0 0 0;
+    background: rgba(0, 0, 0, 0.2);
 }
+
 .footer p {
-  margin: 0;
-  padding: 10px;
-  text-align: center;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
 }
+
 .footer p a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-  .input-group {
-    display: inline-flex;
-  }
-
-  .form-inline input {
-    margin-top: 0;
-  }
+    .input-group {
+        display: inline-flex;
+    }
+    .form-inline input {
+        margin-top: 0;
+    }
 }
+
 @media screen and (min-width: 768px) {
-  .form-inline input {
-    min-width: 500px;
-  }
+    .form-inline input {
+        min-width: 500px;
+    }
 }
