@@ -50,3 +50,37 @@ function gotData(data) {
 
             $('div.gif-results').addClass("well");
             $('.loading-gif').css("display", "block");
+
+            //Iterate through all of the returned JSON data and append to HTML 
+            for (var i = 0; i < data.data.length; i++) {
+                //Get the URL from JSON
+                var gifURL = data.data[i].images.original.url;
+                // var giphyURL = data.data[i].url;
+
+                // $(".insert-gif").attr('src', gifURL);
+                var img = $('<img class="gifs">');
+                img.attr('src', gifURL);
+                img.appendTo('.gif-results');
+
+            } //end for loop
+            $('.loading-gif').css("display", "none");
+
+            $("#load-more").show(); //show load more button at the end of the list
+            $(".default-gif").hide(); //Hide Placeholder GIF when searched
+
+        } else {
+            $(".gif-results").hide();
+            $("#load-more").hide();
+            $('.no-result').show();
+        }
+
+    } //end data.meta.status 
+
+} // end function gotData
+
+
+$("form").submit(function(e) {
+    $('#submit').click();
+    //Blur out of the search bar after enter key hit
+    $('#inlineFormInputGroup').blur();
+});
