@@ -22,7 +22,7 @@ $(function(params) {
             $("#inlineFormInputGroup").removeClass("error");
 
             //Generate entire URL from the user input
-            var url = api + query + apiKey + lang + '&limit=' + apiPagination + rating;
+            var url = api + query + apiKey + lang + '&limit=' + apiPagination;
             var fetchData = $.getJSON(url, gotData);
 
         } // end check if valid input
@@ -35,3 +35,18 @@ $(function(params) {
     });
 
 }); //document ready function end
+
+function gotData(data) {
+    //continue if API exists
+    if (data.meta.status) {
+        if (data.data.length > 0) {
+            $(".gif-results").show();
+            $('.no-result').hide();
+
+            //Remove any existing data - used to clearing out previous searches
+            if ($("div.gif-results img").length > 0) {
+                $("div.gif-results img").remove();
+            }
+
+            $('div.gif-results').addClass("well");
+            $('.loading-gif').css("display", "block");
