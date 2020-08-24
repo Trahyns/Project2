@@ -28,12 +28,6 @@ $(function(params) {
         } // end check if valid input
     }); //end submit click event
 
-    //Display more results as per request
-    $('#load-more').click(function() {
-        apiPagination += 10;
-        $("#submit").click();
-    });
-
 }); //document ready function end
 
 function gotData(data) {
