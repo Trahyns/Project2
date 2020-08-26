@@ -9,7 +9,7 @@ function searchGIFY(e) {
     e.preventDefault();
 
     //url must have http or https when using chrome or will get CORS error
-    var url = 'https://api.giphy.com/v1/gifs/search?';
+    var url = 'https://api.giphy.com/v1/gifs/search?api_key=bJdrGmWEmdF2gIQTv3b7jNYgFmmBzDEV&q=' + query;
     //make everything lowercase incase api doesnt accept capital letters
     var query = $("#inlineFormInputGroup").val().toLowerCase();
     var apiKey = 'bJdrGmWEmdF2gIQTv3b7jNYgFmmBzDEVHk';
@@ -23,15 +23,15 @@ function searchGIFY(e) {
             'api_key': apiKey,
             'q': query
         },
-        success: function(data) {
+        success: function(result) {
             console.log(data);
-            for (var i = 0; i < data.length; i++) {
+            for (var i = 0; i < result.length; i++) {
 
                 var showDiv = $("<div class='gif-results'>");
 
-                var rating = data[i].rating;
-                var defaultAnimatedSrc = data[i].images.fixed_height.url;
-                var staticSrc = data[i].images.fixed_height_still.url;
+                var rating = result[i].rating;
+                var defaultAnimatedSrc = result[i].images.fixed_height.url;
+                var staticSrc = result[i].images.fixed_height_still.url;
                 var showImage = $("<img>");
                 var p = $("<p>").text("Rating: " + rating);
                 showImage.addClass("gif");
