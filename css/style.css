@@ -9,20 +9,12 @@ html {
     margin: 0;
     padding: 0;
     border: 0;
-    background: #6d4a6b;
 }
 
 html,
 body {
     height: 100%;
-}
-
-.navbar-inverse {
-    transition: all 0.2s ease-in;
-}
-
-.transparent {
-    background-color: transparent;
+    background-color: #6d4a6b;
 }
 
 
