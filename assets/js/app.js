@@ -4,7 +4,7 @@ $(document).ready(function() {
         e.preventDefault();
         var x = $("#inlineFormInputGroup").val().toLowerCase();
         console.log(x);
-        var queryURL = "https://api.giphy.com/v1/gifs/search?" + "&api_key=bJdrGmWEmdF2gIQTv3b7jNYgFmmBzDEV&q=" + x;
+        var queryURL = "https://api.giphy.com/v1/gifs/search?" + "&api_key=bJdrGmWEmdF2gIQTv3b7jNYgFmmBzDEV&q=" + x + "&lmit=30";
 
         console.log(queryURL);
         $.ajax({
