@@ -12,7 +12,7 @@ function searchGIFY(e) {
     var url = 'https://api.giphy.com/v1/gifs/search?api_key=bJdrGmWEmdF2gIQTv3b7jNYgFmmBzDEV&q=' + query;
     //make everything lowercase incase api doesnt accept capital letters
     var query = $("#inlineFormInputGroup").val().toLowerCase();
-    var apiKey = 'bJdrGmWEmdF2gIQTv3b7jNYgFmmBzDEVHk';
+    var apiKey = 'bJdrGmWEmdF2gIQTv3b7jNYgFmmBzDEV';
 
 
     //api key must go first for authorization to api
