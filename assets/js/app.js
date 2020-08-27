@@ -27,7 +27,18 @@ $(document).ready(function() {
             }
         })
     }
-    $("#submit").click(displayGifs)
+    $("#submit").click(displayGifs);
 
+
+
+    // Change background of nav bar on scroll
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > window.innerHeight - 55) {
+            $(".navbar").removeClass("transparent");
+        } else {
+            $(".navbar").addClass("transparent");
+        }
+    });
 
 })

@@ -16,6 +16,22 @@ body {
     height: 100%;
 }
 
+.transparent {
+    background: #660061;
+}
+
+.navbar-inverse {
+    transition: all 0.2s ease-in;
+}
+
+a {
+    color: #6d4a6b;
+}
+
+.home {
+    color: white;
+}
+
 
 /*create a shadow effect on search button*/
 

@@ -13,48 +13,70 @@
     <script src="assets/js/app.js"></script>
 </head>
 
-<body>
-    <div class="main">
-        <div class="container-fluid">
 
-            <div class="center">
-                <h1>Your Request Will Be Displayed In A GIPHY!<br /> <small>How do you pronouce it? I say both JIF and GIF hahaha!</small></h1>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top transparent">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+            <h2 class="home">GIPHY API</h2>
+        </div>
+        <!-- .navbar-header -->
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">About</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!-- .navbar-collapse -->
+    </div>
+    <!-- .container -->
+</nav>
+<div class="main">
+    <div class="container-fluid">
 
-                <form class="form-inline">
-                    <label class="sr-only" for="inlineFormInputGroup">Search for GIF's from GIPHY</label>
+        <div class="center">
+            <h1>Your Request Will Be Displayed In A GIPHY!<br /> <small>How do you pronouce it? I say both JIF and GIF hahaha!</small></h1>
 
-                    <div class="row input-group">
-                        <div class="input-group col-md-6 col-sm-9">
-                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search for GIF's from GIPHY">
-                        </div>
-                        <button title="Search" id="submit">Search</button>
+            <form class="form-inline">
+                <label class="sr-only" for="inlineFormInputGroup">Search for GIF's from GIPHY</label>
+
+                <div class="row input-group">
+                    <div class="input-group col-md-6 col-sm-9">
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search for GIF's from GIPHY">
                     </div>
-                    <!-- end of row -->
+                    <button title="Search" id="submit">Search</button>
+                </div>
+                <!-- end of row -->
 
-                </form>
-                <!-- end div.center -->
-
-            </div>
+            </form>
             <!-- end div.center -->
-            <!-- Display GIF's here -->
-            <div class="gif-results"><span id="getdata"></span></div>
-
-            <div class="default-gif">
-                <a class="gif"><img src="https://i.giphy.com/media/Lnuq0IFLhyt6v61Qeo/giphy.gif" title="Default GIF"></a>
-            </div>
 
         </div>
-        <!-- end of div container -->
+        <!-- end div.center -->
+        <!-- Display GIF's here -->
+        <div class="gif-results"><span id="getdata"></span></div>
+
+        <div class="default-gif">
+            <a class="gif"><img src="https://i.giphy.com/media/Lnuq0IFLhyt6v61Qeo/giphy.gif" title="Default GIF"></a>
+        </div>
 
     </div>
-    <!-- end of div.main -->
+    <!-- end of div container -->
+
+</div>
+<!-- end of div.main -->
 
 
-    <div class="footer ">
-        <p>Default GIF generated from <a href="https://gph.is/g/aXWJ7Np ">Epic Fail Lol GIF</a> by
-            <a href="https://giphy.com/tennistv " target="_blank ">Tennis TV</a>
-        </p>
-    </div>
+<div class="footer ">
+    <p>Default GIF generated from <a href="https://gph.is/g/aXWJ7Np ">Epic Fail Lol GIF</a> by
+        <a href="https://giphy.com/tennistv " target="_blank ">Tennis TV</a>
+    </p>
+</div>
 
 
 </body>
