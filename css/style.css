@@ -9,6 +9,7 @@ html {
     margin: 0;
     padding: 0;
     border: 0;
+    background: #6d4a6b;
 }
 
 html,
@@ -16,20 +17,12 @@ body {
     height: 100%;
 }
 
-.transparent {
-    background: #660061;
-}
-
 .navbar-inverse {
     transition: all 0.2s ease-in;
 }
 
-a {
-    color: #6d4a6b;
-}
-
-.home {
-    color: white;
+.transparent {
+    background-color: transparent;
 }
 
 
@@ -39,7 +32,7 @@ a {
 /*background color effect*/
 
 .main {
-    background: linear-gradient(rgba(102, 0, 97, 0.2), rgba(102, 0, 97, 0.01));
+    background-color: #99078f;
     min-height: 100%;
     margin-bottom: -80px;
     padding-bottom: 40px;
@@ -66,11 +59,11 @@ div.center {
     margin-top: -2px;
     width: auto !important;
     transition: all 300ms ease-in-out;
-    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px 3px #660061(0, 0, 0, 0.1);
 }
 
 .form-inline input:hover {
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 5px #660061(0, 0, 0, 0.1);
     transform: scale(1.01);
     transition: all 300ms ease-in-out;
 }
@@ -108,36 +101,6 @@ div.gif-results .gifs {
     max-width: 350px;
 }
 
-.load-more {
-    text-align: center;
-}
-
-.load-more button {
-    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.1);
-    display: none;
-    background: #660061;
-    border: 0;
-    color: white;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-size: 1rem;
-    border-radius: 2px;
-    letter-spacing: 1px;
-    text-align: center;
-    margin: 20px 0;
-    border: 1px solid transparent;
-}
-
-.load-more button:hover {
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-    background: #6d4a6b;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-.error {
-    border: 1px solid red !important;
-}
-
 .default-gif {
     text-align: center;
 }
@@ -150,7 +113,7 @@ div.gif-results .gifs {
 .footer {
     height: 40px;
     margin: 40px 0 0 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: #6d4a6b;
 }
 
 .footer p {
