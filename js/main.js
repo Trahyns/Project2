@@ -1,4 +1,3 @@
-// clear input on click
 $(document).ready(function() {
 
     function displayGifs(e) {
